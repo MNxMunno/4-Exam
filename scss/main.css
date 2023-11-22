@@ -1278,6 +1278,112 @@ footer .foot_form button:hover {
 
 .customer {
   padding-top: 380px;
+  padding-bottom: 160px;
+}
+.customer .content h6 {
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px; /* 120% */
+}
+.customer .content .titleee {
+  color: #65665c;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  padding: 26px 0 80px;
+}
+.customer .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.customer .content .cards .card {
+  border-radius: 16px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 405px;
+  padding: 33px 33px 60px 33px;
+  transition: 0.4s;
+}
+.customer .content .cards .card:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+.customer .content .cards .card .title {
+  text-align: left;
+  padding: 27px 0 28px;
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+.customer .content .cards .card .support {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.customer .content .cards .card .support .name {
+  display: flex;
+  flex-direction: column;
+}
+.customer .content .cards .card .support .name h6 {
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.customer .content .cards .card .support .name p {
+  color: #65665c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+@media only screen and (max-width: 888px) {
+  .customer .content h6 {
+    font-size: 32px;
+  }
+}
+.dark .customer {
+  background: rgb(39, 70, 54);
+}
+.dark .customer .content h6 {
+  color: #f5f5f2;
+}
+.dark .customer .content p {
+  color: #f5f5f2;
+}
+.dark .customer .content .cards .card {
+  background: rgb(28, 46, 37);
+}
+.dark .customer .content .cards .card {
+  border: 1px solid rgb(28, 46, 37);
+}
+.dark .customer .content .cards .card:hover {
+  box-shadow: 0px 3px 15px rgba(235, 229, 229, 0.8);
+}
+.dark .customer .content .cards .card .title {
+  color: #fff;
+}
+.dark .customer .content .cards .card .support h6 {
+  color: #fff;
+}
+.dark .customer .content .cards .card .support p {
+  color: #fff;
 }
 
 @font-face {
