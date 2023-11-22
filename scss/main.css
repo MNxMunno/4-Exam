@@ -14,6 +14,9 @@ header nav {
   justify-content: space-between;
   gap: 50px;
 }
+header nav .logo svg {
+  fill: #2a2c1f;
+}
 header nav .nav_items {
   display: flex;
   align-items: center;
@@ -303,6 +306,9 @@ footer .foot_card {
 footer .foot_card a + a {
   margin-top: 16px;
 }
+footer .foot_card svg {
+  fill: #2a2c1f;
+}
 footer .foot_card a {
   color: #2a2c1f;
   font-family: Roboto;
@@ -402,6 +408,18 @@ footer .foot_form button:hover {
   footer #email {
     padding: 22px 150px 23px 24px;
   }
+}
+.dark footer {
+  background: rgb(28, 57, 42);
+}
+.dark footer .foot_cards .foot_card h6 {
+  color: #fff;
+}
+.dark footer .foot_cards .foot_card a {
+  color: #fff;
+}
+.dark footer .foot_cards .foot_card svg {
+  fill: #fff;
 }
 
 .backtop {
@@ -1224,6 +1242,7 @@ footer .foot_form button:hover {
   padding-bottom: 21px;
 }
 .Location .fami .familiy button {
+  cursor: pointer;
   border-radius: 6px;
   border: 1px solid #cf6f49;
   background: #cf6f49;
@@ -1236,6 +1255,10 @@ footer .foot_form button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+  transition: 0.4s;
+}
+.Location .fami .familiy button:hover {
+  background-color: #894125;
 }
 @media only screen and (max-width: 888px) {
   .Location .content .title {
@@ -1386,6 +1409,160 @@ footer .foot_form button:hover {
   color: #fff;
 }
 
+.posts {
+  background: #f5f5f2;
+  padding: 128px 0 129px;
+}
+.posts .cards1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+}
+.posts .cards1 .card b {
+  border-radius: 32px;
+  background: #e7e8e3;
+  padding: 4px 12px;
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.posts .cards1 .card h6 {
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px; /* 120% */
+  padding: 21px 0 29px;
+}
+.posts .cards1 .card p {
+  max-width: 710px;
+  color: #65665c;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+.posts .cards1 .card a {
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 13px 25px;
+}
+.posts .cards2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.posts .cards2 .card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.09);
+  width: 390px;
+  transition: 0.5s;
+}
+.posts .cards2 .card:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.posts .cards2 .card img {
+  width: 100%;
+}
+.posts .cards2 .card .items {
+  padding: 24px;
+}
+.posts .cards2 .card .items .item {
+  height: 29px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.posts .cards2 .card .items .item b {
+  border-radius: 32px;
+  background: #fae8e1;
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  padding: 4px 8px;
+}
+.posts .cards2 .card .items h6 {
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.6px; /* 140% */
+  padding-top: 16px;
+}
+.posts .cards2 .card .items p {
+  max-width: 390px;
+  color: #65665c;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 9px 0 31px;
+}
+.posts .cards2 .card .items a {
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+@media only screen and (max-width: 888px) {
+  .posts .cards1 .card h6 {
+    font-size: 36px;
+  }
+}
+.dark .posts {
+  background: rgb(40, 72, 56);
+}
+.dark .posts .cards1 h6 {
+  color: #fff;
+}
+.dark .posts .cards1 p {
+  color: #fff;
+}
+.dark .posts .cards2 .card {
+  background: rgb(56, 95, 75);
+}
+.dark .posts .cards2 .card:hover {
+  box-shadow: 0px 3px 15px rgba(235, 229, 229, 0.8);
+}
+.dark .posts .cards2 .card h6 {
+  color: #fff;
+}
+.dark .posts .cards2 .card p {
+  color: #fff;
+}
+.dark .posts .cards2 .card a {
+  color: #c7c9cf;
+}
+
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
@@ -1400,6 +1577,10 @@ html {
 
 .dark header {
   background: #354;
+}
+
+.dark header nav a svg {
+  fill: #fff;
 }
 
 .dark header nav .nav_items .nav-items a {

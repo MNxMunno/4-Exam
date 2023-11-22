@@ -12,6 +12,11 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    .logo {
+      svg {
+        fill: #2a2c1f;
+      }
+    }
 
     .nav_items {
       display: flex;
@@ -23,6 +28,7 @@ header {
         align-items: center;
         justify-content: space-between;
         gap: 32px;
+
         #husus {
           outline: none;
           border: none;

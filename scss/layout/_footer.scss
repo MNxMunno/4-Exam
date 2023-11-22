@@ -24,6 +24,9 @@ footer {
     a + a {
       margin-top: 16px;
     }
+    svg {
+      fill: #2a2c1f;
+    }
   }
 
   .foot_card a {
@@ -140,5 +143,17 @@ footer {
     #email {
       padding: 22px 150px 23px 24px;
     }
+  }
+  .dark & {
+    background: rgb(28, 57, 42);
+  }
+  .dark & .foot_cards .foot_card h6 {
+    color: #fff;
+  }
+  .dark & .foot_cards .foot_card a {
+    color: #fff;
+  }
+  .dark & .foot_cards .foot_card svg {
+    fill: #fff;
   }
 }
