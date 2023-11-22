@@ -1095,6 +1095,10 @@ footer .foot_form button:hover {
 
 .Location {
   background: #f5f5f2;
+  padding-bottom: 244px;
+}
+.Location .content {
+  position: relative;
 }
 .Location .content .title {
   color: #2a2c1f;
@@ -1105,6 +1109,7 @@ footer .foot_form button:hover {
   font-weight: 700;
   line-height: 57.6px; /* 120% */
   padding-bottom: 25px;
+  padding-top: 25px;
 }
 .Location .content p {
   max-width: 713px;
@@ -1132,6 +1137,10 @@ footer .foot_form button:hover {
   background: #fff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   padding: 33px 190px 33px 33px;
+  transition: 0.4s;
+}
+.Location .content .cards .card:hover {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.09);
 }
 .Location .content .cards .card h6 {
   color: #2a2c1f;
@@ -1151,6 +1160,124 @@ footer .foot_form button:hover {
   line-height: 24px; /* 150% */
   padding-left: -25px;
   padding-top: 12px;
+}
+.Location .content .btns {
+  padding-bottom: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.Location .content .btns a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e7e8e3;
+  border-radius: 6px;
+  background: #fff;
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding: 13px 25px;
+  transition: 0.4s;
+}
+.Location .content .btns a:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.Location .fami {
+  position: relative;
+}
+.Location .fami .familiy {
+  border-radius: 24px;
+  background: #65665c;
+  text-align: center;
+  padding: 96px 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -490px;
+}
+.Location .fami .familiy h6 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px; /* 120% */
+  padding: 13px 0 29px;
+}
+.Location .fami .familiy p {
+  max-width: 765px;
+  margin: auto;
+  color: #e7e8e3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+  padding-bottom: 21px;
+}
+.Location .fami .familiy button {
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  padding: 13px 25px;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+@media only screen and (max-width: 888px) {
+  .Location .content .title {
+    font-size: 36px;
+  }
+  .Location .fami .familiy h6 {
+    font-size: 32px;
+  }
+}
+.dark .Location {
+  background-color: rgb(40, 72, 56);
+}
+.dark .Location .content .title {
+  color: #f5f5f2;
+}
+.dark .Location .content p {
+  color: #f5f5f2;
+}
+.dark .Location .content .btns a:hover {
+  box-shadow: 0px 3px 15px rgba(53, 215, 131, 0.5);
+}
+.dark .Location .content .cards .card {
+  background: rgb(56, 95, 75);
+}
+.dark .Location .content .cards .card {
+  border: 1px solid rgb(42, 58, 50);
+}
+.dark .Location .content .cards .card h6 {
+  color: #fff;
+}
+.dark .Location .content .cards .card p {
+  color: #fff;
+}
+.dark .Location .content .cards .card:hover {
+  box-shadow: 0px 3px 15px rgba(235, 229, 229, 0.8);
+}
+.dark .Location .fami .familiy {
+  background: rgb(54, 114, 83);
+}
+
+.customer {
+  padding-top: 380px;
 }
 
 @font-face {
