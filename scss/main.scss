@@ -6,8 +6,25 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark header {
   background: #354;
+}
+.dark header nav .nav_items .nav-items a {
+  color: #fff;
+}
+.dark header nav .nav_items .nav-items .item-btns a {
+  color: #000;
+}
+
+.dark .backtop {
+  background-color: rgb(32, 121, 77);
+}
+.dark .backtop svg {
+  fill: #fff;
 }
 
 * {
