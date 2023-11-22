@@ -1,0 +1,49 @@
+@use "./layout" as *;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.top {
+  background-color: #939878;
+  .top-content {
+    position: relative;
+    p {
+      text-align: center;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px; /* 150% */
+      padding: 10px;
+    }
+    .x {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
