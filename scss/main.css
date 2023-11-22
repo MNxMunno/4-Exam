@@ -1093,12 +1093,76 @@ footer .foot_form button:hover {
   color: #fff;
 }
 
+.Location {
+  background: #f5f5f2;
+}
+.Location .content .title {
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px; /* 120% */
+  padding-bottom: 25px;
+}
+.Location .content p {
+  max-width: 713px;
+  margin: auto;
+  color: #65665c;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 150% */
+}
+.Location .content .cards {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.Location .content .cards .card {
+  width: 390px;
+  border-radius: 16px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 33px 190px 33px 33px;
+}
+.Location .content .cards .card h6 {
+  color: #2a2c1f;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+.Location .content .cards .card p {
+  color: #2a2c1f;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-left: -25px;
+  padding-top: 12px;
+}
+
 @font-face {
   font-family: Roboto;
   src: url(../fonts/Roboto-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
+}
+
+.dark .top {
+  background-color: #354;
 }
 
 .dark header {
