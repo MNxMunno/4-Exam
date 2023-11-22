@@ -1,0 +1,200 @@
+.hero {
+  padding-top: 10px;
+  position: relative;
+  .topp {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .hero-content {
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .card {
+        max-width: 640px;
+        position: relative;
+        &:first-child {
+          padding: 160px 0 101px;
+        }
+      }
+      .title {
+        max-width: 171px;
+        color: #2a2c1f;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px; /* 150% */
+        border-radius: 32px;
+        background: #e7e8e3;
+        padding: 4px 12px;
+      }
+      h1 {
+        color: #2a2c1f;
+        font-family: Roboto;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 67.2px; /* 120% */
+        padding-top: 20px;
+      }
+      p {
+        max-width: 503px;
+        color: #65665c;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 150% */
+        padding: 20px 0;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+      }
+      .hero-img {
+        width: 100%;
+      }
+
+      form {
+        position: relative;
+        max-width: 310px;
+        input {
+          width: 100%;
+          outline: none;
+          border-radius: 6px;
+          border: 1px solid #e7e8e3;
+          background: #fff;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+          padding: 9px 0 9px 45px;
+          background-image: url(../../images/search.svg);
+          background-position: top 16px left 16px;
+          background-repeat: no-repeat;
+
+          color: #65665c;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 150% */
+        }
+        button {
+          max-width: 156px;
+          position: absolute;
+          top: 0px;
+          right: -170px;
+          border-radius: 6px;
+          border: 1px solid #cf6f49;
+          background: #cf6f49;
+          color: #fff;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 150% */
+          padding: 9px 18px 11px;
+        }
+      }
+    }
+    .cards2 {
+      padding-top: 67px;
+      padding-bottom: 122px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      p {
+        max-width: 243px;
+        color: #2a2c1f;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 150% */
+      }
+      .logos {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        svg {
+          fill: #737680;
+          transition: 0.4s linear;
+          cursor: pointer;
+          &:hover {
+            fill: #354;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1065px) {
+    .hero-content {
+      .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cards2 {
+        justify-content: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .hero-content {
+      .cards2 {
+        justify-content: center;
+        .logos {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 615px) {
+    .hero-content {
+      .cards {
+        .card {
+          h1 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+          form {
+            padding-bottom: 55px;
+          }
+        }
+      }
+      .cards2 {
+        justify-content: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 505px) {
+    .hero-content {
+      .cards {
+        .card {
+          form {
+            button {
+              top: 60px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 446px) {
+    .hero-content {
+      .cards {
+        .card {
+          form {
+            padding-bottom: 125px;
+          }
+        }
+      }
+    }
+  }
+}

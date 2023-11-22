@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 27px 0;
   background-color: #fff;
   z-index: 100;
@@ -12,11 +12,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    .logo {
-      svg {
-        fill: #f9f;
-      }
-    }
+
     .nav_items {
       display: flex;
       align-items: center;
@@ -27,9 +23,16 @@ header {
         align-items: center;
         justify-content: space-between;
         gap: 32px;
-        #husus:focus {
+        #husus {
+          background-color: inherit;
           cursor: pointer;
           outline: 0;
+          color: #222;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
         }
         .links {
           color: #222;
@@ -65,6 +68,30 @@ header {
         .links:hover svg {
           fill: #fff;
         }
+        .search {
+          box-shadow: 0 0 0;
+          border-radius: 6px;
+          border: 1px solid #e7e8e3;
+          //   background: #fff;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          padding: 9px 21px;
+          transition: 0.4s;
+          // style
+          color: #2a2c1f;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          border: 0;
+          &:hover {
+            color: #fff;
+            background-color: #fbbca3;
+          }
+        }
         .item-btns {
           display: flex;
           align-items: center;
@@ -92,10 +119,7 @@ header {
               background-color: #fbbca3;
             }
           }
-          .search {
-            border: 0;
-            box-shadow: 0 0 0;
-          }
+
           .orange {
             border-radius: 6px;
             border: 1px solid #cf6f49;
