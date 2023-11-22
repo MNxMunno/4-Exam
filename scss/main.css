@@ -290,7 +290,7 @@ footer .foot_cards {
   gap: 98px;
   padding: 96px 0;
 }
-footer .foot_card h6 {
+footer .foot_cards .foot_card h6 {
   color: #2a2c1f;
   font-family: Roboto;
   font-size: 16px;
@@ -299,17 +299,17 @@ footer .foot_card h6 {
   line-height: 24px; /* 150% */
   padding-bottom: 16px;
 }
-footer .foot_card {
+footer .foot_cards .foot_card {
   display: flex;
   flex-direction: column;
 }
-footer .foot_card a + a {
+footer .foot_cards .foot_card a + a {
   margin-top: 16px;
 }
-footer .foot_card svg {
+footer .foot_cards .foot_card svg {
   fill: #2a2c1f;
 }
-footer .foot_card a {
+footer .foot_cards .foot_card a {
   color: #2a2c1f;
   font-family: Roboto;
   font-size: 16px;
@@ -318,10 +318,10 @@ footer .foot_card a {
   line-height: 21px; /* 150% */
   transition: 0.4s;
 }
-footer .foot_card a:hover {
+footer .foot_cards .foot_card a:hover {
   color: #b1b1b1;
 }
-footer .foot_card_content h6 {
+footer .foot_cards .foot_card_content h6 {
   color: #2a2c1f;
   font-family: Roboto;
   font-size: 16px;
@@ -329,7 +329,7 @@ footer .foot_card_content h6 {
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-footer .foot_card_content .text {
+footer .foot_cards .foot_card_content .text {
   max-width: 379px;
   color: #65665c;
   font-family: Roboto;
@@ -339,7 +339,7 @@ footer .foot_card_content .text {
   line-height: 24px; /* 150% */
   padding: 10px 0 15px;
 }
-footer .foot_card_content p {
+footer .foot_cards .foot_card_content p {
   color: #65665c;
   font-family: Roboto;
   font-size: 12px;
@@ -348,12 +348,12 @@ footer .foot_card_content p {
   line-height: 18px; /* 150% */
   padding-top: 16px;
 }
-footer .foot_form {
+footer .foot_cards .foot_form {
   display: flex;
   align-items: center;
   position: relative;
 }
-footer #email {
+footer .foot_cards #email {
   outline: none;
   padding: 22px 56px 23px 24px;
   border-radius: 6px;
@@ -361,7 +361,7 @@ footer #email {
   background: #fff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
 }
-footer .foot_form button {
+footer .foot_cards .foot_form button {
   border-radius: 6px;
   border: 1px solid #cf6f49;
   background: #cf6f49;
@@ -378,9 +378,53 @@ footer .foot_form button {
   cursor: pointer;
   transition: 0.5s;
 }
-footer .foot_form button:hover {
+footer .foot_cards .foot_form button:hover {
   background-color: #a34e2d;
   color: #1c202f;
+}
+footer .footer__bottom {
+  background: #f5f5f2;
+  padding: 28px 0;
+}
+footer .footer__bottom .foot_bottom-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-left .logo svg {
+  color: #000;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-left p {
+  color: #000;
+  /* Label/Label_Med */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-right a {
+  border-radius: 50%;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-right a svg {
+  fill: #000;
+  transition: 0.5s;
+  width: 100%;
+}
+footer .footer__bottom .foot_bottom-cards .foot_bottom-right a:hover svg {
+  fill: #f20d74;
+  box-shadow: 3px 3px 5px rgba(242, 13, 116, 0.5);
 }
 @media only screen and (max-width: 1277px) {
   footer .foot_cards {
@@ -392,6 +436,15 @@ footer .foot_form button:hover {
 @media only screen and (max-width: 616px) {
   footer #email {
     padding: 22px 300px 23px 24px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  footer .footer__bottom .foot_bottom-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }
 @media only screen and (max-width: 515px) {
@@ -419,6 +472,15 @@ footer .foot_form button:hover {
   color: #fff;
 }
 .dark footer .foot_cards .foot_card svg {
+  fill: #fff;
+}
+.dark footer .footer__bottom {
+  background-color: rgb(36, 82, 58);
+}
+.dark footer .footer__bottom .foot_bottom-cards .foot_bottom-left p {
+  color: #fff;
+}
+.dark footer .footer__bottom .foot_bottom-cards .foot_bottom-right svg {
   fill: #fff;
 }
 
