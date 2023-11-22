@@ -9,6 +9,10 @@
 html {
   scroll-behavior: smooth;
 }
+// .dark * {
+//   color: white !important;
+//   transition: 0.5s ease-in-out;
+// }
 
 .dark header {
   background: #354;
@@ -18,6 +22,9 @@ html {
 }
 .dark header nav .nav_items .nav-items .item-btns a {
   color: #000;
+}
+.dark header nav .nav_items .nav-items select {
+  color: #fff;
 }
 
 .dark .backtop {

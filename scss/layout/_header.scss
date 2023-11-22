@@ -24,9 +24,11 @@ header {
         justify-content: space-between;
         gap: 32px;
         #husus {
+          outline: none;
+          border: none;
           background-color: inherit;
           cursor: pointer;
-          outline: 0;
+
           color: #222;
           font-family: Roboto;
           font-size: 16px;
